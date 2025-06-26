@@ -23,6 +23,8 @@ function strongNumber(n) {
     else {
         console.log("Non Strong Number")
     }
+    
+    return sum;
 }
 
 strongNumber(140) // Output: Non Strong Number
