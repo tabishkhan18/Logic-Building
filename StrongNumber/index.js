@@ -14,7 +14,7 @@ function strongNumber(n) {
             fact = fact * i;
         }
         sum = sum + fact;
-        n = Math.floor(n / 10)
+        n = Math.trunc(n / 10)
     }
 
     if (sum == num) {
