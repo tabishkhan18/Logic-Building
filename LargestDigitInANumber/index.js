@@ -1,5 +1,5 @@
 // Question: Given a number, find the largest single digit in it.
-// 
+// 45610 = 6 is the largest digit
 
 function largestDigitInANumber(num){
 
