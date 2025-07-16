@@ -6,18 +6,18 @@
 // Output: [1, 5], [2, 4]
 
 
-function allArrayPairSum(arr, target) {
-
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] + arr[j] == target) {
-                console.log(`[${arr[i]}, ${arr[j]}]`)
-                break;
-            } 
+function allArrayPairSum(nums, target) {
+    let temp = []
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] == target) {
+                temp.push(i, j)
+            }
+            
         }
     }
+    return temp;
 }
-
 
 let arr1 = [1, 2, 3, 4, 5]
 let arr2 = [2, 6, 5, 9]
@@ -25,7 +25,5 @@ let arr2 = [2, 6, 5, 9]
 let target1 = 6
 let target2 = 11
 
-
-
-allArrayPairSum(arr1, target1) // [1,5], [2,4]
-allArrayPairSum(arr2, target2) // [2,9], [6,5]
+console.log(allArrayPairSum(arr1, target1)) // [1,5], [2,4]
+console.log(allArrayPairSum(arr2, target2)) // [2,9], [6,5]
