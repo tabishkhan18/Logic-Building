@@ -28,7 +28,6 @@ function reverseInteger (num){
         num = Math.trunc(num/10)
     }
     console.log(rev);
-    
 }
 
-reverseInteger(-123)
+reverseInteger(-123) // -321
